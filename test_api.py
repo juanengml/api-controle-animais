@@ -1,13 +1,13 @@
 from requests import get,post,put,delete
 import requests 
 
-endpoint = "https://StormyShoddyWorkplace.juanengml.repl.co/"
+endpoint = "http://52.20.130.186:8080/"
 
 status = get(endpoint).json()
 
 print(status)
 
-endpoint_crud = "https://StormyShoddyWorkplace.juanengml.repl.co/api/v1/crud/"
+endpoint_crud = "{}api/v1/crud/".format(endpoint)
 
 data = {'nome':"lora",
 		    'dt_nascimento':"05/02/2019",

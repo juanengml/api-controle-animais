@@ -10,7 +10,7 @@ api = Api(app)
 
 #---------- connectando db --------------- #  
 
-url_db = os.getenv("DATABASE")
+url_db = os.getenv("DATABASE_URL")
 
 db = dataset.connect(url_db)
 table = db['tbl_pets_animais']
