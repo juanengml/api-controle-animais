@@ -1,7 +1,7 @@
 from requests import get,post,put,delete
 import requests 
 
-endpoint = "http://52.20.130.186:8080/"
+endpoint = "http://44.196.172.92:8080/"
 
 status = get(endpoint).json()
 
